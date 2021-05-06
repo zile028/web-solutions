@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+$textFont: "Source Sans Pro", sans-serif;
+$textHeadings: "Source Sans Pro", sans-serif;
+$fontSize: 16px;
+
+$tamnoPlava: #140035;
+$svetloPlava: #39a1ff;
+$bela: #fff;
+$svetloSiva: #f7f7f7;
+
+$transition: 0.4s ease;
+$textShadow: 0 0px 5px rgba($tamnoPlava, 0.9);
+
+.py {
+    padding: 100px 0;
+    @media (max-width: 769px) {
+        padding: 50px 0;
+    }
+}
+
+// RESET STYLE
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// BASIC STYLE
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $textFont;
+    font-size: $fontSize;
+
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $textHeadings;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color $transition;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+    @media (max-width: 769px) {
+        width: 90%;
+    }
+}
