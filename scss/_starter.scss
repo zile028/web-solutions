@@ -13,7 +13,7 @@ $textShadow: 0 0px 5px rgba($tamnoPlava, 0.9);
 
 .py {
     padding: 100px 0;
-    @media (max-width: 769px) {
+    @media (max-width: 767px) {
         padding: 50px 0;
     }
 }
@@ -32,7 +32,6 @@ html {
 body {
     font-family: $textFont;
     font-size: $fontSize;
-
     line-height: 1.5;
 }
 
@@ -44,6 +43,7 @@ h5,
 h6 {
     font-family: $textHeadings;
     font-weight: 700;
+    color: $tamnoPlava;
 }
 
 ul {
@@ -59,9 +59,9 @@ img {
     width: 100%;
 }
 .container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    @media (max-width: 769px) {
+    @media (max-width: 767px) {
         width: 90%;
     }
 }
